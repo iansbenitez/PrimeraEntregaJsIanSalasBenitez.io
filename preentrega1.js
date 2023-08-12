@@ -7,7 +7,7 @@ function saludo(nombre) {
 function sumar(numeroA, numeroB){
         resultado = numeroA + numeroB;
 
-        return resultado;
+        return parseInt(resultado);
 };
 
 function restar(numeroA, numeroB) {
@@ -68,9 +68,14 @@ for (let i = 1; i < 4; i++) {
         alert("Vas a ingresar dos número que sumados den 17.")
 
         numeroA = parseInt(prompt("Ingresar el primer número."));
-        numeroB = parseInt(prompt("Ingresar el segundo número."))
-
+        numeroB = parseInt(prompt("Ingresar el segundo número."));
+        
+                
+        
         sumar(numeroA, numeroB);
+        
+        
+
 
         if(resultado == 17) {
                 intentos = i;
@@ -83,7 +88,7 @@ for (let i = 1; i < 4; i++) {
                         break;
                 }
                 
-        } else {
+        } else{
                 let intentosRestantes = 3 - i;
 
                 if(intentosRestantes == 1){
