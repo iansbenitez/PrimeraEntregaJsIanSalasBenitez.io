@@ -289,9 +289,9 @@ if (intentos < 4) {
         alert("No hagas una carrera que conlleve álgebra, estás al horno.")
 };
 
-alert("Terminó tu tortura, espero que hayas disfrutado un poquito al menos. Que sigas bien, " + nombre);
+alert("Terminó tu tortura, espero que hayas disfrutado un poquito al menos. Que sigas bien, " + nombre + ".");
 
 
-alert("Y así llegamos al final de este algoritmo. Inplementamos funciones, variables, if, else, do-while, switch y for. Además manejamos control de errores como se pudo.\n\n\n\nHasta la próxima.")
+alert("Y así llegamos al final de este algoritmo. Implementamos funciones, variables, if, else, do-while, switch y for. Además manejamos control de errores como se pudo.\n\n\n\nHasta la próxima.")
 
 
