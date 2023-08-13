@@ -44,7 +44,7 @@ alert("Vamos a ir en este orden: Suma, resta, multiplicación y división. Pero 
 let opcion;
 
 do{
-       opcion = prompt("Cual es resultado de cualquier número multiplicado por 0? \n\nOpción A= Da 1.\n\nOpción B= Da el mismo número (Ej: 7x0= 7).\n\nOpción C= Da 0.");
+       opcion = prompt("Cuál es resultado de cualquier número multiplicado por 0? \n\nOpción A= Da 1.\n\nOpción B= Da el mismo número (Ej: 7x0= 7).\n\nOpción C= Da 0.");
 switch (opcion.toUpperCase()) {
         case "A":
                 alert("Casi casi, pero no.");
@@ -59,7 +59,7 @@ switch (opcion.toUpperCase()) {
                 break;
 
         default: 
-                alert("Ingresaste una opcion no válida, volvé a intentarlo.")
+                alert("Ingresaste una opción no válida, volvé a intentarlo.")
                 break;
 }
 }while ((opcion != "c") && (opcion != "C"));
@@ -119,7 +119,7 @@ if (intentos < 4) {
         }
 
 }else {
-        alert("Ay hermanito, eran 3 oportunidades, hacete ver porque estas mal.")
+        alert("Ay hermanito, eran 3 oportunidades, hacete ver porque estás mal.")
 };
 
 
@@ -225,7 +225,7 @@ for (let i = 1; i < 4; i++) {
 
 if (intentos < 4) {
         if (intentos === 1) {
-                alert("Ahora me gusta más, es mas reconocible hacerlo a la primera. Casi estas para Dinoco.")
+                alert("Ahora me gusta más, es más reconocible hacerlo a la primera. Casi estás para Dinoco.")
         }else {
                 alert("Está mal, pero no tan mal. Tan mal no está. Tan está no tan mal mal, diría Kaczka")
         }
@@ -286,9 +286,10 @@ if (intentos < 4) {
         }
 
 }else {
-        alert("No hagas una carrera que conlleve álgebra, estas al horno.")
+        alert("No hagas una carrera que conlleve álgebra, estás al horno.")
 };
 
+alert("Terminó tu tortura, espero que hayas disfrutado un poquito al menos. Que sigas bien, " + nombre);
 
 
 alert("Y así llegamos al final de este algoritmo. Inplementamos funciones, variables, if, else, do-while, switch y for. Además manejamos control de errores como se pudo.\n\n\n\nHasta la próxima.")
