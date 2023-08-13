@@ -11,15 +11,24 @@ function sumar(numeroA, numeroB){
 };
 
 function restar(numeroA, numeroB) {
-        return numeroA - numeroB;
+        resultado = numeroA - numeroB;
+
+        return parseInt(resultado);
+
 };
 
 function multiplicar(numeroA, numeroB) {
-        return numeroA * numeroB;
+        resultado = numeroA * numeroB;
+
+        return parseInt(resultado);
+
 };
 
 function dividir(numeroA, numeroB) {
-        return numeroA / numeroB;
+        resultado =  numeroA / numeroB;
+
+        return parseInt(resultado);
+
 };
 
 let nombre;
@@ -65,7 +74,7 @@ let intentos;
 
 for (let i = 1; i < 4; i++) {
        
-        alert("Vas a ingresar dos número que sumados den 17.")
+        alert("Vas a ingresar dos números que sumados den 17.")
 
         numeroA = parseInt(prompt("Ingresar el primer número."));
         numeroB = parseInt(prompt("Ingresar el segundo número."));
@@ -114,6 +123,174 @@ if (intentos < 4) {
 };
 
 
+alert("Llegó el momento de la resta.")
 
+
+
+
+
+for (let i = 1; i < 4; i++) {
+       
+        alert("Vas a ingresar dos números que restados entre sí den 29.")
+
+        numeroA = parseInt(prompt("Ingresar el primer número."));
+        numeroB = parseInt(prompt("Ingresar el segundo número."));
+        
+                
+        
+        restar(numeroA, numeroB);
+        
+        
+
+
+        if(resultado == 29) {
+                intentos = i;
+
+                if(intentos == 1){
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intento para acertar.");
+                        break;
+                }else{
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intentos para acertar.");
+                        break;
+                }
+                
+        } else{
+                let intentosRestantes = 3 - i;
+
+                if(intentosRestantes == 1){
+                        alert("Respuesta errónea, volvé a intentarlo. Te queda " + intentosRestantes + " intento.");
+                }else {
+                        alert("Respuesta errónea, volvé a intentarlo. Te quedan " + intentosRestantes + " intentos");
+                }
+                
+        }
+
+        
+}
+
+if (intentos < 4) {
+        if (intentos === 1) {
+                alert("Bien, pasaste de jardín con 10.")
+        }else {
+                alert("Ya no sé si te perdono no hacerlo a la primera.")
+        }
+
+
+}else {
+        alert("Profe de matemática no creo que vayas a ser... Supongo...\n\n\nO eso espero por nuestro bien.")
+};
+
+
+alert("Continuamos, espero que estés respondiendo bien eeeeeh. Toca multiplicar.")
+
+
+for (let i = 1; i < 4; i++) {
+       
+        alert("Vas a ingresar dos números que multiplicados entre sí den como total 40.")
+
+        numeroA = parseInt(prompt("Ingresar el primer número."));
+        numeroB = parseInt(prompt("Ingresar el segundo número."));
+        
+                
+        
+        multiplicar(numeroA, numeroB);
+        
+        
+
+
+        if(resultado == 40) {
+                intentos = i;
+
+                if(intentos == 1){
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intento para acertar.");
+                        break;
+                }else{
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intentos para acertar.");
+                        break;
+                }
+                
+        } else{
+                let intentosRestantes = 3 - i;
+
+                if(intentosRestantes == 1){
+                        alert("Respuesta errónea, volvé a intentarlo. Te queda " + intentosRestantes + " intento.");
+                }else {
+                        alert("Respuesta errónea, volvé a intentarlo. Te quedan " + intentosRestantes + " intentos");
+                }
+                
+        }
+
+        
+}
+
+if (intentos < 4) {
+        if (intentos === 1) {
+                alert("Ahora me gusta más, es mas reconocible hacerlo a la primera. Casi estas para Dinoco.")
+        }else {
+                alert("Está mal, pero no tan mal. Tan mal no está. Tan está no tan mal mal, diría Kaczka")
+        }
+
+}else {
+        alert("No sé, quizás te lo perdono.")
+};
+
+
+
+alert("Llegó la batalla final. La división.")
+
+
+for (let i = 1; i < 4; i++) {
+       
+        alert("Vas a ingresar dos números que dividido el primero por el segundo, den 5")
+
+        numeroA = parseInt(prompt("Ingresar el primer número."));
+        numeroB = parseInt(prompt("Ingresar el segundo número."));
+        
+                
+        
+        dividir(numeroA, numeroB);
+        
+        
+
+
+        if(resultado == 5) {
+                intentos = i;
+
+                if(intentos == 1){
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intento para acertar.");
+                        break;
+                }else{
+                        alert("Felicitaciones, diste una respuesta correcta. Necesitaste " + intentos + " intentos para acertar.");
+                        break;
+                }
+                
+        } else{
+                let intentosRestantes = 3 - i;
+
+                if(intentosRestantes == 1){
+                        alert("Respuesta errónea, volvé a intentarlo. Te queda " + intentosRestantes + " intento.");
+                }else {
+                        alert("Respuesta errónea, volvé a intentarlo. Te quedan " + intentosRestantes + " intentos");
+                }
+                
+        }
+
+        
+}
+
+if (intentos < 4) {
+        if (intentos === 1) {
+                alert("La verdad, dejame felicitarte.\n\n\n\nPor llegar al último año de primaria.")
+        }else {
+                alert("Sabes qué? En esta si te perdono no darle a la primera.")
+        }
+
+}else {
+        alert("No hagas una carrera que conlleve álgebra, estas al horno.")
+};
+
+
+
+alert("Y así llegamos al final de este algoritmo. Inplementamos funciones, variables, if, else, do-while, switch y for. Además manejamos control de errores como se pudo.\n\n\n\nHasta la próxima.")
 
 
